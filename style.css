@@ -3,68 +3,7 @@ body {
     margin: 0;
     padding: 0;
   }
-  
-  header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #f5f5f5;
-  }
-  
-  .shopping-bag-btn {
-    font-size: 1.5rem;
-    padding: 0.5rem 1rem;
-    background-color: #007BFF;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-  }
-  
-  .shopping-bag-btn i {
-    margin-right: 5px;
-  }
-  
-  .search-bar {
-    padding: 1rem;
-    text-align: center;
-  }
-  
-  .search-bar input {
-    width: 60%;
-    padding: 0.5rem;
-  }
-  
-  .product-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1rem;
-    padding: 1rem;
-  }
-  
-  .product {
-    border: 1px solid #ddd;
-    border-radius: 5px;
-    padding: 1rem;
-    width: 200px;
-    text-align: center;
-  }
-  
-  .product img {
-    width: 100px;
-    height: auto;
-  }
-  
-  .product button {
-    margin-top: 10px;
-    padding: 5px 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 3px;
-    cursor: pointer;
-  }
+
   
   /* Popup Shopping Bag */
   .popup {
@@ -210,7 +149,7 @@ body {
   }
   
   .user-info input {
-    width: 100%;
+    width: 98%;
     padding: 0.5rem;
     margin-top: 0.2rem;
     border: 1px solid #ccc;
@@ -246,34 +185,35 @@ body {
     text-decoration: underline;
   }
 
-  /* Header Styling */
+
+/* Header Styling */
 header {
+    position: relative; /* Allows absolute positioning for the center logo */
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between; /* Keeps left and right aligned */
     align-items: center;
+    height: 60px;
     padding: 1rem 2rem;
-    background-color: #99caff; /* Modern blue background */
     color: rgb(0, 0, 0);
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    background-color: #f9f9f9; 
   }
   
-  .header-left h1 {
-    font-size: 1.8rem;
-    font-weight: bold;
-    margin: 0;
+  /* Logo Centered */
+  header .company-logo {
+    position: absolute; /* Center the logo absolutely */
+    left: 50%;
+    top: 15px;
+    transform: translateX(-50%); /* Align exactly to center */
+    height: 80px; /* Set desired height */
+    width: auto; /* Maintain original proportions */
   }
   
+  /* Header Right Section */
   .header-right {
     display: flex;
     align-items: center;
     gap: 1rem;
-  }
-  
-  .company-logo {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%; /* Round logo appearance */
-    /* border: 2px solid rgb(0, 0, 0); */
   }
   
   .header-right input {
@@ -299,6 +239,7 @@ header {
   .shopping-bag-btn:hover {
     background-color: #218838;
   }
+  
   
   /* Search Bar Styling */
   .search-bar input {
@@ -327,7 +268,7 @@ header {
   }
   
   .product {
-    background-color: white;
+    background-color: f9f9f9;
     border: 1px solid #ddd;
     border-radius: 10px;
     width: 250px;
@@ -372,11 +313,21 @@ header {
   .product button:hover {
     background-color: #0056b3;
   }
+
+  .product-heading {
+    text-align: left;
+    font-size: 1.2rem; /* Smaller font size */
+    color: #333; /* Dark gray for better visibility */
+    margin: 0; /* Closer spacing to product grid */
+    background-color: #f9f9f9; /* Same as the product list background */
+    padding: 2rem 5rem 0.2rem; /* Adds subtle spacing */
+  }
+
   
   /* Footer Styling */
   footer {
     background-color: #333;
-    color: white;
+    color: #f9f9f9;
     text-align: center;
     padding: 1.5rem;
   }
@@ -390,3 +341,4 @@ header {
     text-decoration: underline;
   }
   
+
