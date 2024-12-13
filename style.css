@@ -24,6 +24,9 @@ body {
     border-radius: 5px;
     width: 80%;
     max-width: 500px;
+    max-height: 80vh; /* Limit the height to 80% of the viewport */
+    overflow-y: auto; /* Add vertical scroll when content overflows */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
   }
   
   .popup .total {
